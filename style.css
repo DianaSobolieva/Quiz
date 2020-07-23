@@ -7,11 +7,13 @@ body {
 
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: #464D77;
+  text-align:center;
 }
 
 h2 {
   margin-top: 2em; 
+  color:#36827F;
 }
 
 button {
@@ -33,4 +35,9 @@ button {
 }
 .question {
   justify-content:space-around;
+}
+
+.result{
+  color: #2E5339;
+  height: 20em;
 }
