@@ -15,8 +15,13 @@ h2 {
 }
 
 button {
-  
+ display: grid;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  width:150px;
 }
+
 
 .question {
   display: flex;
