@@ -22,6 +22,8 @@ button {
   align-items: center;
   justify-content: center;
   width:150px;
+  background-color:#58B19F;
+  font-style:bold;
 }
 
 
@@ -36,8 +38,11 @@ button {
 .question {
   justify-content:space-around;
 }
+.results{
+  background-color: #D8E2DC;
+  height: 30em;
+}
 
-.result{
-  color: #2E5339;
-  height: 20em;
+#result{
+  color:#3B3B98;
 }
