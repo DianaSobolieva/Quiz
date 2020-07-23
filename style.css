@@ -21,11 +21,24 @@ button {
   margin:auto;
   align-items: center;
   justify-content: center;
-  width:150px;
+  width:200px;
+  height:3em;
   background-color:#58B19F;
-  font-style:bold;
+  border-radius:2em;
+  cursor: pointer;
+  box-shadow: 0 5px #999;
+  
+
+}
+button:hover {
+  background:white;
 }
 
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
 
 .question {
   display: flex;
@@ -34,6 +47,7 @@ button {
   
 .answer-choice img {
   height: 10em;
+
 }
 .question {
   justify-content:space-around;
