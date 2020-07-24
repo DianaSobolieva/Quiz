@@ -12,6 +12,10 @@ var skiingScore = 0;
 
 
 //#TODO: Use the DOM to create variables for the first quiz question.
+var result = document.getElementById("result");
+
+
+
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
 var q1a3 = document.getElementById("q1a3");
@@ -58,7 +62,19 @@ q1a4.addEventListener("click", skiingResult);
 
 //#TODO: Define quiz functions here
 function basketballResult(){
-  
-  
-  
+  basketballScore += 1
+  questionCount +=1 
+  if (questionCount >= 3 {
+      updateResult ()
+      }
 }
+
+function walkingResult() {
+  walkingScore += 1
+  questionCount +=1 
+  if (questionCount >= 3 {
+      updateResult ()
+      })
+}
+
+function swimming
