@@ -37,8 +37,19 @@ var q4a4 = document.getElementById("q4a4-w");
 
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", result1);
+//Question 1 event listeners
+q1a1.addEventListener("click", basketballResult);
+q1a2.addEventListener("click", walkingResult);
+q1a3.addEventListener("click", swimmmingResult);
+q1a4.addEventListener("click", skiingResult);
 
+//Question 2 event listeners
+
+
+//Question 3 event listeners
+
+
+//Question 4 event listeners
 
 
 
@@ -46,7 +57,7 @@ q1a1.addEventListener("click", result1);
 
 
 //#TODO: Define quiz functions here
-function result1(){
+function basketballResult(){
   
   
   
