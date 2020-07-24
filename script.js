@@ -55,10 +55,10 @@ q2a3.addEventListener ("click", basketballResult);
 q2a4.addEventListener ("click", swimmingResult);
 
 //Question 3 event listeners
-q3a1. addEventListener ("click", basketballResult);
-q3a2. addEventListener ("click", walkingResult);
-q3a3. addEventListner ("click", skiingResult);
-q3a4. addEventListener ("click", swimmingResult);
+q3a1.addEventListener ("click", basketballResult);
+q3a2.addEventListener ("click", walkingResult);
+q3a3.addEventListener ("click", skiingResult);
+q3a4.addEventListener ("click", swimmingResult);
 
 
 //Question 4 event listeners
@@ -74,7 +74,7 @@ q4a4.addEventListener ("click", walkingResult);
 function basketballResult(){
   basketballScore += 1;
   questionCount +=1; 
-  alert("One Point to Basketball!");
+  alert("One Point to Basketball!")
   if (questionCount >= 4) {
       updateResult ();
   }
@@ -85,7 +85,7 @@ function basketballResult(){
 function walkingResult() {
   walkingScore += 1;
   questionCount +=1 ;
-  alert("One Point to Walking!");
+  alert("One Point to Walking!")
   if (questionCount >= 4) {
       updateResult ();
       }
@@ -96,7 +96,7 @@ function walkingResult() {
 function swimmingResult () {
   swimmingScore += 1;
   questionCount +=1;
-  alert("One Point to Swimming!");
+  alert("One Point to Swimming!")
   if (questionCount >= 4){
     updateResult();
   }
@@ -107,7 +107,7 @@ function swimmingResult () {
 function skiingResult (){
   skiingScore += 1;
   questionCount += 1;
-  alert("One Point to Skiing!");
+  alert("One Point to Skiing!")
   if (questionCount >= 4) {
     updateResult ();
   }
