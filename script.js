@@ -115,12 +115,19 @@ function skiingResult (){
 
 //Update result function
 function updateResult (){
-  if basketballScore >= 3 (){
+  if basketballScore > swimmingScore || basketballScore>walkingScore || basketballScore >= skiingScore  (){
+    result.innerHTML = "Basketball is for you!"
   }
-  else if swimmingScore >= 3(){
-    
+  else if swimmingScore >= basketballScore || swimmingScore >= walkingScore() || swimmingScore >= skiingScore{
+    result.innerHTML = "Swimming is for you!"
   }
-  else if skiingScore >= 3 (){
+  else if skiingScore > basketballScore || skiingScore >swimmingScore || skiingScore >= walkingScore (){
+    result.innerHTML = "Skiing is for you!"
+  }
+  else if walkingScore >= basketballScore || walkingScore > swimmingScore || walkingScore > skiingScore (){
+    result.innerHTML = "Walking is for you!"
+  }
+  else (){
     
   }
 }
