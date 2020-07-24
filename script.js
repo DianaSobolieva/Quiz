@@ -44,17 +44,28 @@ var q4a4 = document.getElementById("q4a4-w");
 //Question 1 event listeners
 q1a1.addEventListener("click", basketballResult);
 q1a2.addEventListener("click", walkingResult);
-q1a3.addEventListener("click", swimmmingResult);
+q1a3.addEventListener("click", swimmingResult);
 q1a4.addEventListener("click", skiingResult);
 
-//Question 2 event listeners
 
+//Question 2 event listeners
+q2a1. addEventListener("click", skiingResult);
+q2a2. addEventListener("click", walkingResult);
+q2a3. addEventListener ("click", basketballResult);
+q2a4. addEventListener ("click", swimmingResult);
 
 //Question 3 event listeners
+q3a1. addEventListener ("click", basketballResult);
+q3a2. addEventListener ("click", walkingResult);
+q3a3. addEventListner ("click", skiingResult);
+q3a4. addEventListener ("click", swimmingResult);
 
 
 //Question 4 event listeners
-
+q4a1. addEventListener ("click", basketballResult);
+q4a2. addEventListener ("click", swimmingResult);
+q4a3. addEventListener ("click", skiingResult);
+q4a4. addEventListener ("click", walkingResult);
 
 
 
@@ -64,7 +75,7 @@ q1a4.addEventListener("click", skiingResult);
 function basketballResult(){
   basketballScore += 1
   questionCount +=1 
-  if (questionCount >= 3 {
+  if (questionCount >= 3) {
       updateResult ()
       }
 }
@@ -72,11 +83,23 @@ function basketballResult(){
 function walkingResult() {
   walkingScore += 1
   questionCount +=1 
-  if (questionCount >= 3 {
+  if (questionCount >= 3) {
       updateResult ()
-      })
+      }
 }
 
 function swimmingResult () {
-  
+  swimmingScore += 1
+  questionCount +=1
+  if (questionCount >= 3){
+    updateResult()
+  }
+}
+
+function skiingResult (){
+  skiingScore += 1
+  questionCount += 1
+  if (questionCount >= 3) {
+    updateResult ()
+  }
 }
