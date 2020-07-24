@@ -31,10 +31,10 @@ var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 
-var q4a1 = document.getElementById("q4a1-b");
-var q4a2 = document.getElementById("q4a2-s");
-var q4a3 = document.getElementById("q4a3-sk");
-var q4a4 = document.getElementById("q4a4-w");
+var q4a1 = document.getElementById("q4a1");
+var q4a2 = document.getElementById("q4a2");
+var q4a3 = document.getElementById("q4a3");
+var q4a4 = document.getElementById("q4a4");
 
 
 
@@ -71,34 +71,41 @@ q4a4. addEventListener ("click", walkingResult);
 
 
 
-//#TODO: Define quiz functions here
+//#TODO: Define quiz functions here - Basketball
 function basketballResult(){
-  basketballScore += 1
-  questionCount +=1 
+  basketballScore += 1;
+  questionCount +=1; 
+  alert("One Point to Basketball!");
   if (questionCount >= 3) {
-      updateResult ()
-      }
+      updateResult ();
+  }
 }
 
+
+
+
 function walkingResult() {
-  walkingScore += 1
-  questionCount +=1 
+  walkingScore += 1;
+  questionCount +=1 ;
+  alert("One Point to Walking!");
   if (questionCount >= 3) {
-      updateResult ()
+      updateResult ();
       }
 }
 
 function swimmingResult () {
-  swimmingScore += 1
-  questionCount +=1
+  swimmingScore += 1;
+  questionCount +=1;
+  alert("One Point to Swimming!");
   if (questionCount >= 3){
     updateResult()
   }
 }
 
 function skiingResult (){
-  skiingScore += 1
-  questionCount += 1
+  skiingScore += 1;
+  questionCount += 1;
+  alert("One Point to Skiing!");
   if (questionCount >= 3) {
     updateResult ()
   }
