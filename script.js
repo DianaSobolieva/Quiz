@@ -77,4 +77,6 @@ function walkingResult() {
       })
 }
 
-function swimming
+function swimmingResult () {
+  
+}
