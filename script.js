@@ -74,9 +74,8 @@ q4a4.addEventListener ("click", walkingResult);
 function basketballResult(){
   basketballScore += 1;
   questionCount +=1; 
-  alert("One Point to Basketball!")
   if (questionCount >= 4) {
-      updateResult ();
+      updateResult();
   }
 }
 
@@ -85,18 +84,16 @@ function basketballResult(){
 function walkingResult() {
   walkingScore += 1;
   questionCount +=1 ;
-  alert("One Point to Walking!")
   if (questionCount >= 4) {
-      updateResult ();
+      updateResult();
       }
 }
 
 //Walking function
 
-function swimmingResult () {
+function swimmingResult() {
   swimmingScore += 1;
   questionCount +=1;
-  alert("One Point to Swimming!")
   if (questionCount >= 4){
     updateResult();
   }
@@ -104,27 +101,31 @@ function swimmingResult () {
 
 //Skiing function
 
-function skiingResult (){
+function skiingResult(){
   skiingScore += 1;
   questionCount += 1;
-  alert("One Point to Skiing!")
   if (questionCount >= 4) {
-    updateResult ();
+    updateResult();
   }
 }
 
-//Update result function
-//function updateResult (){
-  //if basketballScore > swimmingScore || basketballScore>walkingScore || basketballScore >= skiingScore  (){
-    //result.innerHTML = "Basketball is for you!"
-  //}
-  //else if swimmingScore >= basketballScore || swimmingScore >= walkingScore() || swimmingScore >= skiingScore{
-    //result.innerHTML = "Swimming is for you!"
-  //}
-  //else if skiingScore > basketballScore || skiingScore >swimmingScore || skiingScore >= walkingScore (){
-    //result.innerHTML = "Skiing is for you!"
-  //}
-  //else if walkingScore >= basketballScore || walkingScore > swimmingScore || walkingScore > skiingScore (){
-    //result.innerHTML = "Walking and hiking is for you!"
-  //}
-//}
+// Update result function
+
+function updateResult(){
+  if (basketballScore >= swimmingScore || basketballScore>=walkingScore || basketballScore >= skiingScore) {
+    result.innerHTML = "Basketball is for you!";
+  }
+  else if (swimmingScore > basketballScore || swimmingScore >= walkingScore() || swimmingScore >= skiingScore) {
+    result.innerHTML = "Swimming is for you!";
+  }
+  else if (skiingScore > basketballScore || skiingScore >swimmingScore || skiingScore >= walkingScore) {
+    result.innerHTML = "Skiing is for you!";
+  }
+  else if (walkingScore > basketballScore || walkingScore > swimmingScore || walkingScore > skiingScore) {
+    result.innerHTML = "Walking and hiking is for you!";
+  }
+  else{
+    result.innerHTML = "Hm... Maybe you should choose it yourself!";
+  }
+  
+}
