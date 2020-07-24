@@ -70,7 +70,6 @@ q4a4. addEventListener ("click", walkingResult);
 
 
 
-
 //#TODO: Define quiz functions here - Basketball
 function basketballResult(){
   basketballScore += 1;
@@ -81,8 +80,7 @@ function basketballResult(){
   }
 }
 
-
-
+// Walking function
 
 function walkingResult() {
   walkingScore += 1;
@@ -93,20 +91,36 @@ function walkingResult() {
       }
 }
 
+//Walking function
+
 function swimmingResult () {
   swimmingScore += 1;
   questionCount +=1;
   alert("One Point to Swimming!");
   if (questionCount >= 3){
-    updateResult()
+    updateResult();
   }
 }
+
+//Skiing function
 
 function skiingResult (){
   skiingScore += 1;
   questionCount += 1;
   alert("One Point to Skiing!");
   if (questionCount >= 3) {
-    updateResult ()
+    updateResult ();
+  }
+}
+
+//Update result function
+function updateResult (){
+  if basketballScore >= 3 (){
+  }
+  else if swimmingScore >= 3(){
+    
+  }
+  else if skiingScore >= 3 (){
+    
   }
 }
