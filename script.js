@@ -15,22 +15,22 @@ var skiingScore = 0;
 var result = document.getElementById("result");
 
 
-
+// variables for question 1
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
 var q1a3 = document.getElementById("q1a3");
 var q1a4 = document.getElementById("q1a4");
-
+// variables for question 2
 var q2a1 = document.getElementById("q2a1");
 var q2a2 = document.getElementById("q2a2");
 var q2a3 = document.getElementById("q2a3");
 var q2a4 = document.getElementById("q2a4");
-
+//variables for question 3
 var q3a1 = document.getElementById("q3a1");
 var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
-
+//variables for question 4
 var q4a1 = document.getElementById("q4a1");
 var q4a2 = document.getElementById("q4a2");
 var q4a3 = document.getElementById("q4a3");
@@ -49,10 +49,10 @@ q1a4.addEventListener("click", skiingResult);
 
 
 //Question 2 event listeners
-q2a1. addEventListener("click", skiingResult);
-q2a2. addEventListener("click", walkingResult);
-q2a3. addEventListener ("click", basketballResult);
-q2a4. addEventListener ("click", swimmingResult);
+q2a1.addEventListener("click", skiingResult);
+q2a2.addEventListener("click", walkingResult);
+q2a3.addEventListener ("click", basketballResult);
+q2a4.addEventListener ("click", swimmingResult);
 
 //Question 3 event listeners
 q3a1. addEventListener ("click", basketballResult);
@@ -62,10 +62,10 @@ q3a4. addEventListener ("click", swimmingResult);
 
 
 //Question 4 event listeners
-q4a1. addEventListener ("click", basketballResult);
-q4a2. addEventListener ("click", swimmingResult);
-q4a3. addEventListener ("click", skiingResult);
-q4a4. addEventListener ("click", walkingResult);
+q4a1.addEventListener ("click", basketballResult);
+q4a2.addEventListener ("click", swimmingResult);
+q4a3.addEventListener ("click", skiingResult);
+q4a4.addEventListener ("click", walkingResult);
 
 
 
@@ -75,7 +75,7 @@ function basketballResult(){
   basketballScore += 1;
   questionCount +=1; 
   alert("One Point to Basketball!");
-  if (questionCount >= 3) {
+  if (questionCount >= 4) {
       updateResult ();
   }
 }
@@ -86,7 +86,7 @@ function walkingResult() {
   walkingScore += 1;
   questionCount +=1 ;
   alert("One Point to Walking!");
-  if (questionCount >= 3) {
+  if (questionCount >= 4) {
       updateResult ();
       }
 }
@@ -97,7 +97,7 @@ function swimmingResult () {
   swimmingScore += 1;
   questionCount +=1;
   alert("One Point to Swimming!");
-  if (questionCount >= 3){
+  if (questionCount >= 4){
     updateResult();
   }
 }
@@ -108,26 +108,23 @@ function skiingResult (){
   skiingScore += 1;
   questionCount += 1;
   alert("One Point to Skiing!");
-  if (questionCount >= 3) {
+  if (questionCount >= 4) {
     updateResult ();
   }
 }
 
 //Update result function
-function updateResult (){
-  if basketballScore > swimmingScore || basketballScore>walkingScore || basketballScore >= skiingScore  (){
-    result.innerHTML = "Basketball is for you!"
-  }
-  else if swimmingScore >= basketballScore || swimmingScore >= walkingScore() || swimmingScore >= skiingScore{
-    result.innerHTML = "Swimming is for you!"
-  }
-  else if skiingScore > basketballScore || skiingScore >swimmingScore || skiingScore >= walkingScore (){
-    result.innerHTML = "Skiing is for you!"
-  }
-  else if walkingScore >= basketballScore || walkingScore > swimmingScore || walkingScore > skiingScore (){
-    result.innerHTML = "Walking is for you!"
-  }
-  else (){
-    
-  }
-}
+//function updateResult (){
+  //if basketballScore > swimmingScore || basketballScore>walkingScore || basketballScore >= skiingScore  (){
+    //result.innerHTML = "Basketball is for you!"
+  //}
+  //else if swimmingScore >= basketballScore || swimmingScore >= walkingScore() || swimmingScore >= skiingScore{
+    //result.innerHTML = "Swimming is for you!"
+  //}
+  //else if skiingScore > basketballScore || skiingScore >swimmingScore || skiingScore >= walkingScore (){
+    //result.innerHTML = "Skiing is for you!"
+  //}
+  //else if walkingScore >= basketballScore || walkingScore > swimmingScore || walkingScore > skiingScore (){
+    //result.innerHTML = "Walking and hiking is for you!"
+  //}
+//}
