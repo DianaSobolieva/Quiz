@@ -238,4 +238,7 @@ function enableButtons(){
 
 
 
- 
+ //Buttons to change color
+let btnActive = document.querySelector("q1a1")
+btnActive.addEventListner("click", () => btnActive.style.backgroundColor = "navy")
+
