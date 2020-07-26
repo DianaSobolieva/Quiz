@@ -13,6 +13,7 @@ var skiingScore = 0;
 
 //#TODO: Use the DOM to create variables for the first quiz question.
 var result = document.getElementById("result");
+var resultimg = document.getElementById("resultimg")
 var restart = document.getElementById("restart")
 
 
@@ -117,6 +118,7 @@ function skiingResult(){
 function updateResult(){
   if (basketballScore > swimmingScore && basketballScore>walkingScore && basketballScore > skiingScore) {
     result.innerHTML = "Basketball is for you!";
+    resultimg.innerHTML = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1519861531473-9200262188bf.jpg?v=1595753439460";
   }
   else if (swimmingScore > basketballScore && swimmingScore > walkingScore && swimmingScore > skiingScore) {
     result.innerHTML = "Swimming is for you!";
