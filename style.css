@@ -46,12 +46,19 @@ button:active {
   display: flex;
   margin-top: 2em;
 }
+  
+.answer-choice img {
+  height: 10em;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  
 
-.question{
-  justify-content: space-around;
+
+
 }
-
-
+.question {
+  justify-content:space-around;
+}
 .results{
   background-color: #ced6e0;
   height: 30em;
@@ -68,7 +75,5 @@ button:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
   width: 50%
-  
 }
