@@ -45,7 +45,7 @@ var q4a4 = document.getElementById("q4a4");
 //#TODO: Add Event Listeners to your answer choice variables.
 //Question 1 event listeners
 // I was trying to get two inputs in the event listener to disable buttons 
-q1a1.addEventListener("click", basketballResult, disableButtons);
+q1a1.addEventListener("click", basketballResult, disableButt);
 q1a2.addEventListener("click", walkingResult, disableButtons);
 q1a3.addEventListener("click", swimmingResult, disableButtons);
 q1a4.addEventListener("click", skiingResult, disableButtons);
@@ -118,19 +118,23 @@ function skiingResult(){
 function updateResult(){
   if (basketballScore > swimmingScore && basketballScore>walkingScore && basketballScore > skiingScore) {
     result.innerHTML = "Basketball is for you!";
-    resultimg.innerHTML = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1519861531473-9200262188bf.jpg?v=1595753439460";
+    document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1519861531473-9200262188bf.jpg?v=1595753439460";
   }
   else if (swimmingScore > basketballScore && swimmingScore > walkingScore && swimmingScore > skiingScore) {
     result.innerHTML = "Swimming is for you!";
+    document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1587527633747-416f1030939d.jpg?v=1595753447936";
   }
   else if (skiingScore > basketballScore && skiingScore > swimmingScore && skiingScore > walkingScore) {
     result.innerHTML = "Skiing is for you!";
+    document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1550443640-6e18cdd503a4.jpg?v=1595753444044";
   }
   else if (walkingScore > basketballScore && walkingScore > swimmingScore && walkingScore > skiingScore) {
     result.innerHTML = "Walking and hiking is for you!";
+    document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fbb9f9777.jpg?v=1595753455917";
   }
   else{
     result.innerHTML = "Swimming is for you!";
+    document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1587527633747-416f1030939d.jpg?v=1595753447936";
   }
   
 }
@@ -144,9 +148,10 @@ function restartQuiz(){
   var walkingScore = 0;
   var swimmingScore = 0;
   var skiingScore = 0;
+  document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1484069560501-87d72b0c3669.jpg?v=1595752585041";
 }
 
 //Disable buttons
-function disableButtons() {
-  document.getElementById("q1a1", "q1a2","q1a3","q1a4").disabled = true;
-}
+//function disableButtons() {
+ // document.getElementById("q1a1", "q1a2","q1a3","q1a4").disabled = true;
+//}
