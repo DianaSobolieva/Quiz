@@ -44,11 +44,11 @@ button:active {
 
 .question {
   display: flex;
-  justify-content:space-around;
   margin-top: 2em;
 }
-  .question {
-  justify-content:space-around; 
+
+.question{
+  justify-content: space-around;
 }
 
 
