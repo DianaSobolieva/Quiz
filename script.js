@@ -149,9 +149,10 @@ function restartQuiz(){
   swimmingScore = 0;
   skiingScore = 0;
   document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1484069560501-87d72b0c3669.jpg?v=1595752585041";
+  enableButtons();
 }
 
-//Disable buttons
+//Disable buttons for Q2
 function disableQ1(){
   q1a1.disabled = true;
   q1a2.disabled = true;
@@ -161,3 +162,30 @@ function disableQ1(){
 
 //Add Event Listener for q1 buttons to disable them
 q1a1.addEventListener("click", disableQ1);
+q1a2.addEventListener("click", disableQ1);
+q1a3.addEventListener("click", disableQ1);
+q1a4.addEventListener("click", disableQ1);
+
+
+//Disable buttons for Q2
+function disableQ2(){
+  q2a1.disabled = true;
+}
+
+
+//Add Event Listener for q2 buttons to disable them
+
+
+
+
+
+
+
+//Enables buttons  after the restart of the quiz
+
+function enableButtons(){
+  q1a1.disabled = false;
+  q1a2.disabled = false;
+  q1a3.disabled = false;
+  q1a4.disabled = false;
+}
