@@ -25,7 +25,7 @@ button {
   width:200px;
   height:3em;
   background-color:#58B19F;
-  border-radius:2em;
+  border-radius:0em;
   cursor: pointer;
   box-shadow: 0 7px #999;
   font-weight: bold;
