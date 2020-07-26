@@ -43,10 +43,11 @@ var q4a4 = document.getElementById("q4a4");
 
 //#TODO: Add Event Listeners to your answer choice variables.
 //Question 1 event listeners
-q1a1.addEventListener("click", basketballResult);
-q1a2.addEventListener("click", walkingResult);
-q1a3.addEventListener("click", swimmingResult);
-q1a4.addEventListener("click", skiingResult);
+// I was trying to get two inputs in the event listener to disable buttons 
+q1a1.addEventListener("click", basketballResult, disableButtons);
+q1a2.addEventListener("click", walkingResult, disableButtons);
+q1a3.addEventListener("click", swimmingResult, disableButtons);
+q1a4.addEventListener("click", skiingResult, disableButtons);
 
 
 //Question 2 event listeners
@@ -141,4 +142,9 @@ function restartQuiz(){
   var walkingScore = 0;
   var swimmingScore = 0;
   var skiingScore = 0;
+}
+
+//Disable buttons
+function disableButtons() {
+  document.getElementById("q1a1", "q1a2","q1a3","q1a4").disabled = true;
 }
