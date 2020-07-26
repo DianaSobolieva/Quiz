@@ -238,7 +238,56 @@ function enableButtons(){
 
 
 
- //Buttons to change color
-let btnActive = document.querySelector("q1a1")
-btnActive.addEventListner("click", () => btnActive.style.backgroundColor = "navy")
+ //Buttons to change color in Q1
+let btnActive = document.querySelector("#q1a1");
+btnActive.addEventListener("click", () => btnActive.style.backgroundColor = "#6c5ce7")
 
+let btnCalm = document.querySelector("#q1a2");
+btnCalm.addEventListener("click", () => btnCalm.style.backgroundColor = "#6c5ce7")
+
+let btnBeach = document.querySelector("#q1a3");
+btnBeach.addEventListener("click", () => btnBeach.style.backgroundColor = "#6c5ce7")
+
+let btnMount = document.querySelector("#q1a4");
+btnMount.addEventListener("click", () => btnMount.style.backgroundColor = "#6c5ce7")
+
+
+ //Buttons to change color in Q2
+let btnWinter = document.querySelector("#q2a1");
+btnWinter.addEventListener("click", () => btnWinter.style.backgroundColor = "#6c5ce7")
+
+let btnSpring = document.querySelector("#q2a2");
+btnSpring.addEventListener("click", () => btnSpring.style.backgroundColor = "#6c5ce7")
+
+let btnFall = document.querySelector("#q2a3");
+btnFall.addEventListener("click", () => btnFall.style.backgroundColor = "#6c5ce7")
+
+let btnSummer = document.querySelector("#q2a4");
+btnSummer.addEventListener("click", () => btnSummer.style.backgroundColor = "#6c5ce7")
+
+
+//Buttons to change color in Q3
+let btnLostCount = document.querySelector("#q3a1");
+btnLostCount.addEventListener("click", () => btnLostCount.style.backgroundColor = "#6c5ce7")
+
+let btnFew = document.querySelector("#q3a2");
+btnFew.addEventListener("click", () => btnFew.style.backgroundColor = "#6c5ce7")
+
+let btnBF = document.querySelector("#q3a3");
+btnBF.addEventListener("click", () => btnBF.style.backgroundColor = "#6c5ce7")
+
+let btnDog = document.querySelector("#q3a4");
+btnDog.addEventListener("click", () => btnDog.style.backgroundColor = "#6c5ce7")
+
+//Buttons to change color in Q4
+let btnBall = document.querySelector("#q4a1");
+btnLostCount.addEventListener("click", () => btnLostCount.style.backgroundColor = "#6c5ce7")
+
+let btnWave = document.querySelector("#q3a2");
+btnFew.addEventListener("click", () => btnFew.style.backgroundColor = "#6c5ce7")
+
+let btnBF = document.querySelector("#q3a3");
+btnBF.addEventListener("click", () => btnBF.style.backgroundColor = "#6c5ce7")
+
+let btnDog = document.querySelector("#q3a4");
+btnDog.addEventListener("click", () => btnDog.style.backgroundColor = "#6c5ce7")
