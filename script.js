@@ -117,6 +117,7 @@ function skiingResult(){
 function updateResult(){
   if (basketballScore > swimmingScore && basketballScore>walkingScore && basketballScore > skiingScore) {
     result.innerHTML = "Basketball is for you!";
+    result.image src ""
   }
   else if (swimmingScore > basketballScore && swimmingScore > walkingScore && swimmingScore > skiingScore) {
     result.innerHTML = "Swimming is for you!";

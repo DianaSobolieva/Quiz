@@ -3,6 +3,7 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+  background-color:#dfe4ea;
 }
 
 h1 {
@@ -27,7 +28,8 @@ button {
   border-radius:2em;
   cursor: pointer;
   box-shadow: 0 7px #999;
-  
+  font-weight: bold;
+  font-style: italic;
 
 }
 button:hover {
@@ -58,7 +60,7 @@ button:active {
   justify-content:space-around;
 }
 .results{
-  background-color: #D8E2DC;
+  background-color: #ced6e0;
   height: 30em;
 }
 
