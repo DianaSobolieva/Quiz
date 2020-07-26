@@ -31,6 +31,7 @@ button {
   font-weight: bold;
   font-style: italic;
 
+
 }
 button:hover {
   background:white;
@@ -49,8 +50,6 @@ button:active {
   
 .answer-choice img {
   height: 10em;
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
   
 
 

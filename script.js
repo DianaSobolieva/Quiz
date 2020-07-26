@@ -45,7 +45,7 @@ var q4a4 = document.getElementById("q4a4");
 //#TODO: Add Event Listeners to your answer choice variables.
 //Question 1 event listeners
 // I was trying to get two inputs in the event listener to disable buttons 
-q1a1.addEventListener("click", basketballResult, disableButt);
+q1a1.addEventListener("click", basketballResult, disableButtons);
 q1a2.addEventListener("click", walkingResult, disableButtons);
 q1a3.addEventListener("click", swimmingResult, disableButtons);
 q1a4.addEventListener("click", skiingResult, disableButtons);
@@ -143,15 +143,18 @@ function updateResult(){
 
 function restartQuiz(){
   result.innerHTML = "Your result is..."
-  var questionCount = 0;
-  var basketballScore = 0;
-  var walkingScore = 0;
-  var swimmingScore = 0;
-  var skiingScore = 0;
+  questionCount = 0;
+  basketballScore = 0;
+  walkingScore = 0;
+  swimmingScore = 0;
+  skiingScore = 0;
   document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1484069560501-87d72b0c3669.jpg?v=1595752585041";
 }
 
 //Disable buttons
-//function disableButtons() {
- // document.getElementById("q1a1", "q1a2","q1a3","q1a4").disabled = true;
-//}
+function disableButtons() {
+ document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
+}
