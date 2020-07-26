@@ -150,6 +150,7 @@ function restartQuiz(){
   skiingScore = 0;
   document.getElementById ("resultimg").src = "https://cdn.glitch.com/de3e202a-2841-440f-abf1-f6a6c047f3d3%2Fphoto-1484069560501-87d72b0c3669.jpg?v=1595752585041";
   enableButtons();
+  changeColorToNormal();
 }
 
 //Disable buttons for Q1
@@ -237,6 +238,41 @@ function enableButtons(){
 }
 
 
+//Change color to normal
+function changeColorToNormal(){
+  let btnActive = document.querySelector("#q1a1");
+  btnActive.style.backgroundColor = "#58B19F";
+  
+  let btnCalm = document.querySelector("#q1a2");
+  btnCalm.style.backgroundColor = ("#58B19F")
+  
+  let btnBeach = document.querySelector("#q1a3");
+  btnBeach.style.backgroundColor = "#58B19F";
+  
+  let btnMount = document.querySelector("#q1a4");
+  btnMount.style.backgroundColor = "#58B19F";
+  
+  let btnWinter = document.querySelector("#q2a1");
+  btnWinter.style.backgroundColor = "#58B19F";
+  
+  let btnSpring = document.querySelector("#q2a2");
+  btnSpring.style.backgroundColor = ("#58B19F")
+  
+  let btnFall = document.querySelector("#q1a3");
+  btnFall.style.backgroundColor = "#58B19F";
+  
+  let btnMount = document.querySelector("#q1a4");
+  btnMount.style.backgroundColor = "#58B19F";
+  
+  
+  
+  
+  
+}
+
+
+
+
 
  //Buttons to change color in Q1
 let btnActive = document.querySelector("#q1a1");
@@ -281,13 +317,13 @@ btnDog.addEventListener("click", () => btnDog.style.backgroundColor = "#6c5ce7")
 
 //Buttons to change color in Q4
 let btnBall = document.querySelector("#q4a1");
-btnLostCount.addEventListener("click", () => btnLostCount.style.backgroundColor = "#6c5ce7")
+btnBall.addEventListener("click", () => btnBall.style.backgroundColor = "#6c5ce7")
 
-let btnWave = document.querySelector("#q3a2");
-btnFew.addEventListener("click", () => btnFew.style.backgroundColor = "#6c5ce7")
+let btnWave = document.querySelector("#q4a2");
+btnWave.addEventListener("click", () => btnWave.style.backgroundColor = "#6c5ce7")
 
-let btnBF = document.querySelector("#q3a3");
-btnBF.addEventListener("click", () => btnBF.style.backgroundColor = "#6c5ce7")
+let btnStick = document.querySelector("#q4a3");
+btnStick.addEventListener("click", () => btnStick.style.backgroundColor = "#6c5ce7")
 
-let btnDog = document.querySelector("#q3a4");
-btnDog.addEventListener("click", () => btnDog.style.backgroundColor = "#6c5ce7")
+let btnMan = document.querySelector("#q4a4");
+btnMan.addEventListener("click", () => btnMan.style.backgroundColor = "#6c5ce7")

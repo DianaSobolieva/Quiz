@@ -79,16 +79,6 @@ button:active {
   
 }
 
-button:active {
-  background-color:navy;
-}
-button:focus{
-  background-color:red;
-}
-button:visited{
-  background-color:green;
-}
-
 
 
 #restart{
