@@ -170,10 +170,44 @@ q1a4.addEventListener("click", disableQ1);
 //Disable buttons for Q2
 function disableQ2(){
   q2a1.disabled = true;
+  q2a2.disabled = true;
+  q2a3.disabled = true;
+  q2a4.disabled = true;
 }
+//Add Event Listner for q2 to disable buttons 
+q2a1.addEventListener("click", disableQ2);
+q2a2.addEventListener("click", disableQ2);
+q2a3.addEventListener("click", disableQ2);
+q2a4.addEventListener("click", disableQ2);
 
 
-//Add Event Listener for q2 buttons to disable them
+//Disable buttons for Q2
+function disableQ3(){
+  q3a1.disabled = true;
+  q3a2.disabled = true;
+  q3a3.disabled = true;
+  q3a4.disabled = true;
+}
+//Add Event Listner for q3 to disable buttons 
+q3a1.addEventListener("click", disableQ3);
+q3a2.addEventListener("click", disableQ3);
+q3a3.addEventListener("click", disableQ3);
+q3a4.addEventListener("click", disableQ3);
+
+
+//Disable buttons for Q4
+function disableQ4(){
+  q4a1.disabled = true;
+  q4a2.disabled = true;
+  q4a3.disabled = true;
+  q4a4.disabled = true;
+}
+//Add Event Listner for q3 to disable buttons 
+q4a1.addEventListener("click", disableQ4);
+q4a2.addEventListener("click", disableQ4);
+q4a3.addEventListener("click", disableQ4);
+q4a4.addEventListener("click", disableQ4);
+
 
 
 
@@ -188,4 +222,16 @@ function enableButtons(){
   q1a2.disabled = false;
   q1a3.disabled = false;
   q1a4.disabled = false;
+  q2a1.disabled = false;
+  q2a2.disabled = false;
+  q2a3.disabled = false;
+  q2a4.disabled = false;
+  q3a1.disabled = false;
+  q3a2.disabled = false;
+  q3a3.disabled = false;
+  q3a4.disabled = false;
+  q4a1.disabled = false;
+  q4a2.disabled = false;
+  q4a3.disabled = false;
+  q4a4.disabled = false;
 }
