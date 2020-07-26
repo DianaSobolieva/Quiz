@@ -25,12 +25,12 @@ button {
   width:200px;
   height:3em;
   background-color:#58B19F;
-  border-radius:0em;
+  border-radius:3em;
   cursor: pointer;
   box-shadow: 0 7px #999;
   font-weight: bold;
   font-style: italic;
-
+  outline: none;
 
 }
 button:hover {
@@ -79,10 +79,16 @@ button:active {
   
 }
 
+button:active {
+  background-color:navy;
+}
+button:focus{
+  background-color:red;
+}
+button:visited{
+  background-color:green;
+}
 
-@keyframes button {
-  from {background-color: red;}
-  to {background-color: yellow;}
 
 
 #restart{
