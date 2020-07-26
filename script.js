@@ -13,6 +13,7 @@ var skiingScore = 0;
 
 //#TODO: Use the DOM to create variables for the first quiz question.
 var result = document.getElementById("result");
+var restart = document.getElementById("restart")
 
 
 // variables for question 1
@@ -68,6 +69,7 @@ q4a3.addEventListener ("click", skiingResult);
 q4a4.addEventListener ("click", walkingResult);
 
 
+restart.addEventListener("click", restartQuiz)
 
 
 //#TODO: Define quiz functions here - Basketball
@@ -128,4 +130,15 @@ function updateResult(){
     result.innerHTML = "Swimming is for you!";
   }
   
+}
+
+//Restart the quiz
+
+function restartQuiz(){
+  result.innerHTML = "Your result is..."
+  var questionCount = 0;
+  var basketballScore = 0;
+  var walkingScore = 0;
+  var swimmingScore = 0;
+  var skiingScore = 0;
 }
