@@ -152,7 +152,7 @@ function restartQuiz(){
   enableButtons();
 }
 
-//Disable buttons for Q2
+//Disable buttons for Q1
 function disableQ1(){
   q1a1.disabled = true;
   q1a2.disabled = true;
