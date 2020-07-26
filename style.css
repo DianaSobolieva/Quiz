@@ -67,3 +67,11 @@ button:active {
 #result{
   color:#3B3B98;
 }
+
+#resultimg{
+  height: 500x;
+  width: 600px;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
