@@ -47,11 +47,6 @@ button:active {
   margin-top: 2em;
 }
   
-.answer-choice img {
-  height: 10em;
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-  
 
 
 
