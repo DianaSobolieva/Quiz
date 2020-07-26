@@ -258,15 +258,35 @@ function changeColorToNormal(){
   let btnSpring = document.querySelector("#q2a2");
   btnSpring.style.backgroundColor = ("#58B19F")
   
-  let btnFall = document.querySelector("#q1a3");
+  let btnFall = document.querySelector("#q2a3");
   btnFall.style.backgroundColor = "#58B19F";
   
-  let btnMount = document.querySelector("#q1a4");
-  btnMount.style.backgroundColor = "#58B19F";
+  let btnSummer = document.querySelector("#q2a4");
+  btnSummer.style.backgroundColor = "#58B19F";
   
+  let btnLostCount = document.querySelector("#q3a1");
+  btnLostCount.style.backgroundColor = "#58B19F";
   
+  let btnFew = document.querySelector("#q3a2");
+  btnFew.style.backgroundColor = ("#58B19F")
   
+  let btnBF = document.querySelector("#q3a3");
+  btnBF.style.backgroundColor = "#58B19F";
   
+  let btnDog = document.querySelector("#q3a4");
+  btnDog.style.backgroundColor = "#58B19F";
+  
+  let btnBall = document.querySelector("#q4a1");
+  btnBall.style.backgroundColor = "#58B19F";
+  
+  let btnWave = document.querySelector("#q4a2");
+  btnWave.style.backgroundColor = ("#58B19F")
+  
+  let btnStick = document.querySelector("#q4a3");
+  btnStick.style.backgroundColor = "#58B19F";
+  
+  let btnMan = document.querySelector("#q4a4");
+  btnMan.style.backgroundColor = "#58B19F";
   
 }
 
