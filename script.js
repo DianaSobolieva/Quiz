@@ -153,7 +153,7 @@ function restartQuiz(){
 
 //Disable buttons
 function disableButtons(){
- document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a1").disabled = true;
   document.getElementById("q1a2").disabled = true;
   document.getElementById("q1a3").disabled = true;
   document.getElementById("q1a4").disabled = true;
