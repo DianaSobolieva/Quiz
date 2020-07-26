@@ -76,7 +76,14 @@ button:active {
   margin-right: auto;
   margin-bottom:2em;
   width: 50%
+  
 }
+
+
+@keyframes button {
+  from {background-color: red;}
+  to {background-color: yellow;}
+
 
 #restart{
   margin-top:8em;
